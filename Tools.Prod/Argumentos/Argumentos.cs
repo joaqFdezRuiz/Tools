@@ -2,7 +2,7 @@
 
 namespace Tools.Prod.Argumentos
 {
-  public class Argumentos
+  public class Argumentos : Tools.Prod.Argumentos.IArgumentos
   {
     private string[] args;
 

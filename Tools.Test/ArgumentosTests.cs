@@ -7,7 +7,7 @@ namespace Tools.Test
   [TestFixture]
   public class ArgumentosTests
   {
-    private  Argumentos argumentos;
+    private  IArgumentos argumentos;
     [SetUp]
     public void SetUp() {
       argumentos = new Argumentos(new string[] { "un argumento" });

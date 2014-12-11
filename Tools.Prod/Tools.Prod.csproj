@@ -41,6 +41,8 @@
   <ItemGroup>
     <Compile Include="Argumentos\Argumentos.cs" />
     <Compile Include="Argumentos\IArgumentos.cs" />
+    <Compile Include="Finalizacion\Finalizacion.cs" />
+    <Compile Include="Finalizacion\IFinalizacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,12 +1,12 @@
 ﻿using NUnit.Framework;
-using Tools.Prod;
+using Tools.Prod.Finalizacion;
 
 namespace Tools.Test
 {
   [TestFixture]
   class FinalizacionTests
   {
-    private Finalizacion finalizacion;
+    private IFinalizacion finalizacion;
     [SetUp]
     public void SetUp()
     {

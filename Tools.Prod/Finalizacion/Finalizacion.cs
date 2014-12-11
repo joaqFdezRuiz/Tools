@@ -1,7 +1,7 @@
 ﻿
-namespace Tools.Prod
+namespace Tools.Prod.Finalizacion
 {
-  public class Finalizacion
+  public class Finalizacion : Tools.Prod.Finalizacion.IFinalizacion
   {
     private const int CORRECTO = 0;
     private const int ERROR = -1;

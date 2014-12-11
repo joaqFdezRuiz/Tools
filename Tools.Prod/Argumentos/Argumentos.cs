@@ -18,7 +18,9 @@ namespace Tools.Prod.Argumentos
 
     public bool ValidarNumArgumentos(int numArgsEsperado)
     {
-      return true;
+      if (args.Length == numArgsEsperado)
+        return true;
+      throw new ArgumentException("número de argumentos incorrecto");
     }
   }
 }

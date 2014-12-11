@@ -18,5 +18,12 @@ namespace Tools.Test
       var argumentos = new Argumentos(new string[] { "un argumento" });
       Assert.IsTrue(argumentos.ValidarNumArgumentos(1));
     }
+
+    [Test]
+    public void DevolverExcepcionSiNumeroArgumentosDistintoAlEsperado() {
+      var argumentos = new Argumentos(new string[] { "un argumento" });
+      var exception = Assert.Throws<ArgumentException>(() => argumentos.ValidarNumArgumentos(2));
+      Assert.That(exception, Has.Message.EqualTo("número de argumentos incorrecto"));
+    }
   }
 }

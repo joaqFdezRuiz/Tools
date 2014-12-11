@@ -1,15 +1,19 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 namespace Tools.Prod
 {
   public class Finalizacion
   {
+    private const int CORRECTO = 0;
+    private const int ERROR = -1;
+
     public int Correcto
     {
-      get { return 0; }
+      get { return CORRECTO  ; }
+    }
+
+    public object Error
+    {
+      get { return ERROR; }
     }
   }
 }

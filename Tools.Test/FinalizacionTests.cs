@@ -1,19 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using NUnit.Framework;
+﻿using NUnit.Framework;
+using Tools.Prod;
 
 namespace Tools.Test
 {
   [TestFixture]
   class FinalizacionTests
   {
+    private Finalizacion finalizacion;
+    [SetUp]
+    public void SetUp()
+    {
+      finalizacion = new Finalizacion();
+    }
     [Test]
-    public void DevolverCeroSiFinalizacionCorrecta() {
-      Tools.Prod.Finalizacion finalizacion = new Tools.Prod.Finalizacion();
+    public void DevolverCeroSiFinalizacionCorrecta()
+    {
       Assert.AreEqual(0, finalizacion.Correcto);
+    }
+
+    [Test]
+    public void DevolverMenosUnoSiFinalizacionError()
+    {
+      Assert.AreEqual(-1, finalizacion.Error);
     }
   }
 }
